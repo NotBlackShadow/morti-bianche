@@ -1,0 +1,418 @@
+body{
+    animation: backInDown;
+    animation-duration: 1s;
+}
+
+.cronaca{
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    line-height: 1.5;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    background-color: #e9ecef;
+}
+
+.cronaca hr{
+border: 0;
+  height: 1px;
+  background: #007bff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.cronaca h2{
+   font-size: 1.75em;
+  margin: 20px 0 10px;
+    margin-bottom: 10px;
+  color: #343a40;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cronaca_introduzione h1{
+    color: #007bff;
+    text-align: center;
+    font-size: calc(25px + 1vw);
+}
+
+.cronaca_introduzione h2{
+    color: #445454;
+    font-size: calc(15px + 1vw);
+}
+
+.cronaca_introduzione p{
+font-size: 1em;
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #6c757d;
+}
+
+.cronaca_articoli h2{
+    font-size: calc(15px + 0.3vw);
+    margin-bottom: 10%;
+}
+
+.cronaca_cards{
+    border: 2px solid black;
+}
+
+.cronaca_cards a{
+    text-decoration: none;
+    color: blue;
+    transition: 0.5s ease;
+	-moz-transition: 0.5 ease; /* Firefox */
+	-webkit-transition: 0.5s ease; /* Chrome - Safari */
+	-o-transition: 0.5s ease; /* Opera */
+	-ms-transition : 0.5s ease; /* IE */
+}
+
+.cronaca_cards a:hover{
+    text-decoration: underline;
+    color: #2a2510;
+    transform : translateX(10px);
+	-moz-transform : translateX(10px); /* Firefox */
+	-webkit-transform : translateX(10px); /* Chrome - Safari */
+	-o-transform : translateX(10px); /* Opera */
+	-ms-transform : translateX(10px); /* IE */
+}
+
+.cronaca_cards p{
+    font-size: 1em;
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #6c757d;
+}
+
+button{
+    font-size: calc(12px + 0.3vw);
+    font-weight: bold;
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: #d9d2ca;
+	font-family: 'Press Start 2P';
+	padding: 2%;
+	color: black;
+    margin-block: 5px;
+}
+
+button:hover{
+    transition: 0.5s ease;
+	background-color: #444c64;
+    color: white;
+    border: 2px solid #f7d32e;
+}
+
+.table_cronaca{
+    font-size: calc(12px + 0.3vw);
+}
+
+.titolo_tabella_cronaca{
+    font-size: calc(10px + 1vw);
+    text-align: center;
+    background-color: rgb(247, 82, 82);
+    color: white;
+}
+
+.table_cronaca_sottotitoli{
+    font-size: calc(15px + 0.3vw);
+    background-color: #7d8088;
+    color: white;
+}
+
+.fonte_statistiche h3{
+    text-align: center;
+}
+
+.fonte_statistiche p{
+    text-align: left;
+}
+
+.fonte_statistiche a{
+    color: white;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.fonte_statistiche a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+.fonte_statistiche{
+    color: white;
+    background-color: #445454;
+    width:auto;
+}
+
+@media (min-width: 1024.5px){
+
+    .butons{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .cronaca_articoli{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cronaca_cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1%;
+        margin: 10px;
+        width: 30%;
+    }
+
+    .cronaca_tabella{
+        margin-inline: 2%;
+        margin-block: 2%;
+        text-align: center;
+    }
+    
+    .cronaca_tabella td{
+        padding: 1%;
+        width: 1%;
+    }
+
+    .tabella_cronaca_mobile{
+        display: none;
+    }
+
+    .fonte_statistiche{
+     color: white;
+     display: flex;
+     flex-direction: column;
+     background-color: #445454;
+     margin-top: 5%;
+    }
+
+}
+
+@media (max-width: 1024px){
+
+    .cronaca{
+	margin-left: auto;
+	margin-right: auto;
+    }
+
+    .butons{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 1%;
+        margin-inline: 5%;
+    }
+
+    .cronaca_cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1%;
+        margin: 10px;
+        width: 25%;
+    }
+
+    .cronaca_articoli{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-block: 2%;
+    }
+
+    .cronaca_tabella{
+        margin-inline: 2%;
+        margin-block: 2%;
+        text-align: center;
+    }
+
+    .foto_link{
+        width: 0%
+    }
+    
+    .cronaca_tabella td{
+        padding: 1%;
+        width: 1%;
+    }
+
+    .fonte_statistiche{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media (max-width: 767.5px){
+
+    .butons{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1%;
+    }
+
+    .cronaca_cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1%;
+        margin: 10px;
+        width: 40%;
+    }
+
+    .cronaca_articoli{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-block: 2%;
+    }
+
+    .cronaca_tabella{
+        margin-inline: 2%;
+        margin-block: 2%;
+        text-align: center;
+    }
+    
+    .cronaca_tabella td{
+        padding: 1%;
+        width: 1%;
+    }
+
+    .foto_link{
+        width: 0%
+    }
+
+    .fonte_statistiche{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 530.5px) {
+
+    .cronaca_cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1%;
+        margin: 10px;
+        width: 100%;
+    }
+
+    .cronaca_articoli{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-block: 2%;
+    }
+
+    .cronaca_tabella{
+        margin-block: 2%;
+        text-align: center;
+    }
+    
+    .cronaca_tabella td{
+        padding: 1%;
+        width: 1%;
+    }
+
+    .foto_link{
+        width: 0%
+    }
+
+    .fonte_statistiche{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .cronaca_cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1%;
+        margin: 10px;
+        width: 100%;
+    }
+
+    .cronaca_articoli{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-block: 2%;
+    }
+
+    .cronaca_tabella{
+        display: none;
+    }
+
+    .tabella_cronaca_mobile{
+        margin-bottom: 5%;
+    }
+
+    .foto_link{
+        width: 100%;
+    }
+
+    .fonte_statistiche{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar a {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

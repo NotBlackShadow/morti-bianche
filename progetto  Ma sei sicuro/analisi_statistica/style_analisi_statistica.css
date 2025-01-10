@@ -1,0 +1,233 @@
+body{
+
+   animation: backInDown;
+   animation-duration: 1s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    background-color: #e9ecef;
+}
+
+.statistica{
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: 'Montserrat', sans-serif; /* 8-bit style font */
+    color: #000000;
+    line-height: 1.5;
+}
+
+.statistica h1{
+color: #007bff;
+    text-align: center;
+    font-size: calc(25px + 1vw);
+}
+
+.statistica h2, h3{
+    text-align: center;
+}
+
+.statistica h2{
+    font-size: calc(15px + 1vw);
+}
+
+.statistica h3{
+    font-size: calc(12px + 1vw);
+}
+
+.nazioni{
+    background-color: #d9d2ca;
+    font-weight: bold;
+}
+
+.table_titoli{
+    background-color: #7d8088;
+    color: white;
+}
+
+.tassi{
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    width: 50%;
+}
+
+.table_statistica td{
+    text-align: center;
+    font-size: calc(15px + 0.3vw);
+}
+
+.statistiche_testi h2{
+    color: red;
+    font-size: calc(17px + 1vw);
+}
+
+.statistiche_testi h3{
+    color: green;
+    font-size: calc(16px + 1vw);
+}
+
+.statistiche_testi p{
+    font-size: calc(13px + 0.3vw);
+}
+
+.statistiche_testi hr{
+    border: 1px solid #444c64;
+}
+
+.fonte_statistiche p{
+    text-align: center;
+}
+
+.fonte_statistiche a{
+    color: white;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.fonte_statistiche a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+.fonte_statistiche{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: #445454;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+@media (min-width: 1024.5px){
+
+.table_statistica{
+    margin: 0 auto;
+    margin-block: 3%;
+    width: 70%;
+}
+
+.bandiere{
+    width: 40px;
+    height: 35px;
+    border-radius: 50%;
+    float: left;
+}
+
+.table_statistica td{
+    width: 30%;
+    padding: 2%;
+}
+
+.statistiche_testi{
+    padding-inline: 15%;
+}
+
+}
+
+@media (max-width: 1024px){
+
+.table_statistica{
+    margin: 0 auto;
+    margin-block: 3%;
+    width: 80%;
+}
+
+.bandiere{
+    width: 25px;
+    height: 15px;
+    border-radius: 50%;
+    float: left;
+}
+
+.fonte_statistiche{
+    margin-inline: 2%;
+    width: auto;
+    font-size: calc(12px + 0.3vw);
+}
+
+.table_statistica td{
+    padding: 2%;
+}
+
+}
+
+@media (max-width: 767.5px){
+
+.bandiere{
+    width: 25px;
+    height: 15px;
+}
+
+.table_statistica{
+    margin-block: 10%;
+    margin-inline: 2%;
+    width: auto;
+}
+
+.table_statistica td{
+    font-size: calc(12px + 0.3vw);
+}
+
+.nazioni{
+    padding-top: 5%;
+    letter-spacing: 1px
+}
+
+.statistiche_testi{
+    padding-inline: 5%;
+}
+
+}
+
+@media (max-width: 480.5px){
+
+.bandiere{
+    width: 0;
+}
+
+.nazioni{
+    padding-top: 5%;
+    letter-spacing: 1px
+}
+
+.table_statistica td{
+    font-size: calc(10px + 0.3vw);
+}
+
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar a {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
